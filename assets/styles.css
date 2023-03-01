@@ -14,3 +14,20 @@ body {
 	font-size: 14px;
 	margin: 0;
 }
+
+/* main section 1 */
+
+.flex-container.section1 {
+    display: flex;
+}
+
+h4.header {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.heroimg {
+    height: 280px;
+	margin: 10px 5px;
+}
+
