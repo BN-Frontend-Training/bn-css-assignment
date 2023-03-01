@@ -3,9 +3,14 @@
 	src: url(./fonts/Roboto/Roboto-Regular.ttf);
 }
 
+@font-face {
+	font-family: 'Roboto Bold';
+	src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+
 body {
 	font-family: 'Roboto', sans-serif ;
-	margin: 25px;
 	background-color: rgb(240,240,240);
 	font-size: 14px;
+	margin: 0;
 }
