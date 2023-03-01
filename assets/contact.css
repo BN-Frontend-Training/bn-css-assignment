@@ -1,0 +1,87 @@
+body {
+	height: 100%;
+}
+
+header {
+	height: 50px;
+	background: #000;
+}
+
+footer {
+	height: 50px;
+	background: #000;
+}
+
+.contact {
+	background-color: #676767;
+	padding: 20px 20px;
+}
+
+.map {
+	background-color: #676767;
+	padding: 20px 20px;
+	border-top: 1px solid #ffffff46;
+}
+
+.contact .hero {
+	padding: 50px 20px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.contact .container {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+	color: #ffffff;
+}
+
+.contact input, textarea  {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+	width: 100%;
+	padding: 8px 12px;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color: #BEF2B6;
+    font-weight: 400;
+    color: #4b4b5a;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.contact .contact-form {
+	width: 40%;
+}
+
+.contact .information {
+	color: #ffffff;
+	margin-left: 20px;
+	font-size: 16px;
+	/* margin: 0 auto;
+    width: 50%; */
+	list-style: none;
+}
+
+.contact .information li {
+	margin-bottom: 10px;
+}
