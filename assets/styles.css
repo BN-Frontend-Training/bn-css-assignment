@@ -157,3 +157,32 @@ footer {
 .fa-instagram:hover {
   color: #f6046c;
 }
+
+/* main section 1 */
+
+.flex-container.section1 {
+    display: flex;
+	background-color: rgb(10, 10, 26);
+}
+
+
+h4.hero.main {
+    font-size: 48px;
+    font-weight: bold;
+	color: #F9FAF8;
+	margin: 3rem;
+}
+	
+
+p.hero.second {
+	font-size: 18p;
+	color: #E5E7EB;
+	margin: 3rem;
+
+}
+
+.hero.img {
+    height: 300px;
+	margin: 30px;
+}
+
