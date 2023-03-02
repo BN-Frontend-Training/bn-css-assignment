@@ -5,27 +5,114 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
+		<link rel="stylesheet" href="./assets/styles.css">
 	</head>
 	<body>
 		<header>
-			<a href="./pages/blog-page-main.html">Blog</a>
-			<a href="./pages/blog-page-content.html">Blog Detail</a>
-			<a href="./pages/contact.html">Contact Us</a>
+			<nav class="navbar">
+				<div class="container">
+				<div class="wrapper">
+					<div class="navbar-left">
+					<a class="navbar-brand" href="#"
+						>JEKH <span class="team">TEAM</span></a
+					>
+					</div>
+					<div class="navbar-right">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Recipes</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+				</div>
+			</nav>
 		</header>
+		  
 		<section>
-			<div>
-				<h4 class="header">This website is awsome</h6>
-			<p class="pheader">At the most basic level, CSS is just a set of rules you declare that 
-				represents how the browser should interpret the visual appearance of 
-				HTML elements. Each rule is made up of selectors and declarations 
-				where each declaration is made up of a property:value pair.
-			</p>
+			<div class="flex-container section1">
+				<div>
+					<h4 class="hero main">Discover the extraordinary food recipes on the earth!</h4>
+					<p class="hero second">
+						Tell me what you eat and i will tell you what you are. 
+						World food day, everyday!
+					</p>
+				</div>
+				<div>
+					<img class="hero img" src="./assets/images /heroimg.jpg" alt="spoon of spicy">
+				</div>
 			</div>
-			<div><img src="" alt=""></div>
 		</section>
+
 		<section>
-			
+			<div class="flex-container section2">
+				<div>
+					<img src="./assets/images /fishndchips.jpg" alt="fish and chips">
+					<h1></h1>
+					<p></p>
+				</div>
+				<div> 
+					<img src="./assets/images /miscellaneous rice.jpg" alt="miscellaneous rice">
+					<h1></h1>
+					<p></p>
+				</div>
+				<div>
+					<img src="" alt="">
+					<h1></h1>
+					<p></p>
+				</div>
+				<div>
+					<img src="" alt="">
+					<h1></h1>
+					<p></p>
+				</div>
+			</div>
 		</section>
-		<footer></footer>
+
+		<section class="quote-section">
+			<div class="container">
+			  <div class="quote-box">
+				<p class="quote-text">
+				  “Cooking is not difficult. Everyone has taste, even if they don't
+				  realize it. Even if you're not a great chef, there's nothing to stop
+				  you understanding the difference between what tastes good and what
+				  doesn't.”
+				</p>
+				<span class="user">Gerard Depardieu</span>
+				<hr />
+				<p class="info">
+				  Find inspiration for using up recipes like rhubarb, wild gralic and
+				  other greens.
+				</p>
+				<div class="button-wrapper">
+				  <button class="sign-up">Subscribe here!</button>
+				</div>
+			  </div>
+			</div>
+		  </section>
+	  
+		  <footer>
+			<div class="container">
+			  <div class="footer-box">
+				<div class="short-link">
+				  <a href="">Recipes</a>
+				  <a href="">Contact</a>
+				</div>
+				<div class="copyright">
+				  2023 created by JEKH <span class="team">TEAM</span>
+				</div>
+				<div class="social-icons">
+				  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+				  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+				  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+				  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+			  </div>
+			</div>
+		  </footer>
 	</body>
 </html>
