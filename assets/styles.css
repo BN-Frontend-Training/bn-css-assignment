@@ -19,15 +19,27 @@ body {
 
 .flex-container.section1 {
     display: flex;
+	background-color: rgb(10, 10, 26);
 }
 
-h4.header {
-    font-size: 35px;
+
+h4.hero.main {
+    font-size: 48px;
     font-weight: bold;
+	color: #F9FAF8;
+	margin: 3rem;
+}
+	
+
+p.hero.second {
+	font-size: 18p;
+	color: #E5E7EB;
+	margin: 3rem;
+
 }
 
-.heroimg {
-    height: 280px;
-	margin: 10px 5px;
+.hero.img {
+    height: 300px;
+	margin: 30px;
 }
 
