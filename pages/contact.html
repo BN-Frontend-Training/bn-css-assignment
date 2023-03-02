@@ -17,12 +17,13 @@
 
         <section class="contact">
             <div class="hero">
-                <h1>Contact Us</h1>
+                <h1 class="information-header">Suggest a Recipe</h1>
+                <p></p>
             </div>
           
             <div class="container">
                 
-                <ul class="information">
+                <!-- <ul class="information">
                     <li>
                         <img src="./../assets/images/icons/location.png" alt="Location Icon"> Ware road
                     </li>
@@ -32,7 +33,7 @@
                     <li>
                         <img src="./../assets/images/icons/email.png" alt="Email Icon"> user@loremipsum.com
                     </li>
-                </ul>
+                </ul> -->
 
                 <form class="contact-form">
                     <p>
@@ -44,16 +45,24 @@
                         <input type="text" id="last_name" name="last_name">
                     </p>
                     <p>
-                        <label for="phone_number">Phone Number</label>
-                        <input type="tel" id="phone_number" name="phone_number">
-                    </p>
-                    <p>
-                        <label for="subject">Subject</label>
+                        <label for="subject">Email</label>
                         <input type="text" id="subject" name="subject">
                     </p>
                     <p>
-                        <label for="message">Message</label>
-                        <textarea type="text" id="message" name="message" rows="5" cols="33"></textarea>
+                        <label for="category">Recipe Category</label>
+                        <select name="category" id="category">
+                            <option value="">--Please choose an option--</option>
+                            <option value="dog">Breakfast</option>
+                            <option value="cat">Lunch</option>
+                            <option value="hamster">Dinner</option>
+                            <option value="parrot">Appetizer</option>
+                            <option value="spider">Side dish</option>
+                            <option value="goldfish">Baked-goods</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Recipe Suggestion</label>
+                        <textarea type="text" placeholder="Please provide ingredients and instructions for recipe" id="message" name="message" rows="5" cols="33"></textarea>
                     </p>
                     <p>
                         <button>Submit</button>
