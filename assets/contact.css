@@ -2,25 +2,10 @@ body {
 	height: 100%;
 }
 
-header {
-	height: 50px;
-	background: #000;
-}
-
-footer {
-	height: 50px;
-	background: #000;
-}
-
 .contact {
 	background-color: #E6E7EB;
-	padding: 20px 20px;
-}
-
-.map {
-	background-color: #E6E7EB;
-	padding: 20px 20px;
-	border-top: 1px solid #ffffff46;
+	padding: 2rem 2rem;
+	margin-bottom: 4rem;
 }
 
 .contact .hero {
@@ -29,7 +14,12 @@ footer {
 	color: #1F2937;
 }
 
-.contact .container {
+.contact .hero p {
+	opacity:50%;
+	margin-top: 0.5rem;
+}
+
+.contact .form-wrapper {
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -74,6 +64,10 @@ footer {
 	width: 40%;
 }
 
+.contact .contact-form p {
+	margin: 2rem 0
+}
+
 @media (max-width: 768px) {
 	.contact .hero {
 		padding: 20px 10px;
@@ -98,12 +92,18 @@ footer {
 	margin-bottom: 10px;
 }
 
+.map {
+	background-color: #E6E7EB;
+	padding: 20px 20px;
+	border-top: 1px solid #ffffff46;
+}
+
 /* Base */
-.header-logo {
+/* .header-logo {
 	font-size: 24px;
 }
 
 .information-header {
 	font-size: 36px;
 	font-weight: bold;
-}
+} */

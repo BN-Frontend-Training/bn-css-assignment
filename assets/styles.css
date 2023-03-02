@@ -17,7 +17,7 @@
   src: url(./fonts/Roboto/Roboto-Bold.ttf);
 }
 
-body {
+html, body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(240, 240, 240);
   font-size: 14px;
@@ -68,6 +68,13 @@ body {
 .nav-link {
   color: #e5e7eb;
   font-size: 18px;
+}
+
+.nav-link.btn {
+  padding: 8px 12px;
+	/* font-size: 14px; */
+	border-radius: 4px;
+	background-color: #3782F6;
 }
 
 .quote-section {
