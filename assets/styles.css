@@ -78,6 +78,7 @@ html, body {
 }
 
 .quote-section {
+  width: 100%;
   margin-top: 2.5rem;
 }
 
@@ -168,14 +169,14 @@ footer {
 /* main section 1 */
 
 .flex-container.section1 {
-    display: flex;
-	background-color: rgb(10, 10, 26);
+  display: flex;
+	background-color: #1f2837;
 }
 
 
 h4.hero.main {
-    font-size: 48px;
-    font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 	color: #F9FAF8;
 	margin: 3rem;
 }
@@ -189,7 +190,7 @@ p.hero.second {
 }
 
 .hero.img {
-    height: 300px;
+  height: 300px;
 	margin: 30px;
 }
 
