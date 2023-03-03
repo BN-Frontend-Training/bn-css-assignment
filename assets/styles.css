@@ -58,10 +58,14 @@ html, body {
 }
 
 .nav-item {
-  margin-right: 10px;
+  margin-right: 2rem;
 }
 
 .nav-item:hover {
+  opacity: 0.6;
+}
+
+.nav-item .nav-link.active {
   border-bottom: 2px solid #fff;
 }
 
@@ -217,4 +221,96 @@ p.second.section {
 img.section.\32 {
     height: 150px;
     width: 220px;
+}
+
+
+/* Suggest Recipe */
+.suggest-recipe {
+	background-color: #E6E7EB;
+	padding: 2rem 2rem;
+	margin-bottom: 4rem;
+}
+
+.suggest-recipe .hero {
+	padding: 50px 20px;
+	text-align: center;
+	color: #1F2937;
+}
+
+.suggest-recipe .hero p {
+	opacity:50%;
+	margin-top: 0.5rem;
+}
+
+.suggest-recipe .form-wrapper {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.suggest-recipe label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+	color: #1F2937;
+}
+
+.suggest-recipe input, textarea, select  {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	box-sizing: border-box
+}
+
+.suggest-recipe button {
+	width: 100%;
+	padding: 8px 12px;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color: #3782F6;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.suggest-recipe .suggest-recipe-form {
+	width: 40%;
+}
+
+.suggest-recipe .suggest-recipe-form p {
+	margin: 2rem 0
+}
+
+@media (max-width: 768px) {
+	.suggest-recipe .hero {
+		padding: 20px 10px;
+		text-align: center;
+		color: #1F2937;
+	}
+	.suggest-recipe .suggest-recipe-form {
+		width: 100%;
+	}
+}
+
+.suggest-recipe .information {
+	color: #ffffff;
+	margin-left: 20px;
+	font-size: 16px;
+	/* margin: 0 auto;
+    width: 50%; */
+	list-style: none;
+}
+
+.suggest-recipe .information li {
+	margin-bottom: 10px;
 }
