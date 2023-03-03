@@ -170,12 +170,10 @@ footer {
 }
 
 /* main section 1 */
-
 .flex-container.section1 {
     display: flex;
 	background-color: rgb(10, 10, 26);
 }
-
 
 h4.hero.main {
     font-size: 48px;
@@ -222,7 +220,6 @@ img.section.\32 {
     height: 150px;
     width: 220px;
 }
-
 
 /* Suggest Recipe */
 .suggest-recipe {
@@ -314,3 +311,5 @@ img.section.\32 {
 .suggest-recipe .information li {
 	margin-bottom: 10px;
 }
+
+/* End Suggest Recipe */
