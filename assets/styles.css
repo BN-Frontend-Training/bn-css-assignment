@@ -43,6 +43,7 @@ section .title {
   text-align: center;
   color: #1f2937;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .navbar {
@@ -269,22 +270,22 @@ footer {
 
 /* Featured Recipes */
 .flex-container.section2 {
-  /* background-color: #3882f6; */
   display: flex;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 .second.section {
   flex-basis: min-content;
-  margin: 30px;
-  margin-left: 6em;
+  /* margin: 30px;
+  margin-left: 6em; */
 }
 
 
 h1.second.section {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   text-align: center;
 }
 
@@ -312,12 +313,13 @@ p.second.section {
 
 .quote-text {
   text-align: center;
-  font-style: light italic;
+  font-style: italic;
+  font-weight: 100;
   color: #1f2937;
 }
 
 .author {
-  align-self: flex-end;
+  text-align: right;
   margin-top: 10px;
 }
 /* End Quote */
@@ -327,17 +329,22 @@ p.second.section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #3882f6;
+  padding: 2rem 2.5rem;
+  border-radius: 0.4rem;
 }
 
 .newsletter p {
   font-size: 18px;
+  color: #fff;
 }
 
 .newsletter button {
   padding: 0.75rem;
+  border: 1px solid #ffffff;
   background-color: #3882f6;
   color: #fff;
-  border: none;
+  cursor: pointer;
   border-radius: 5px;
 }
 /* End Newsletter */
