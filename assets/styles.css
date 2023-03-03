@@ -200,17 +200,23 @@ p.hero.second {
 
 /* section 2 */
 
+.featured.text {
+  background-color: #3882f6;
+  text-align: center;
+}
+
 .flex-container.section2 {
+  flex-wrap: wrap;
   display: flex;
-  align-items: center;
-  padding: 50px 100px;
-  gap: 20px;
-	background-color: #3882f6;
+  background-color: #3882f6;
 }
 
 .second.section {
-	margin: 30px;
+  flex-basis: min-content;
+  margin: 30px;
+  margin-left: 6em;
 }
+
 
 h1.second.section {
     margin-left: 20px;
@@ -221,7 +227,8 @@ p.second.section {
     margin-left: 5px;
 }
 
-img.section.\32 {
-    height: 150px;
-    width: 220px;
+.second.section img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
 }
