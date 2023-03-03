@@ -194,7 +194,7 @@ p.hero.second {
 }
 
 .hero.img {
-    height: 300px;
+  height: 300px;
 	margin: 30px;
 }
 
@@ -203,6 +203,8 @@ p.hero.second {
 .featured.text {
   background-color: #3882f6;
   text-align: center;
+  font-size: 36px;
+  color: #1f2937;
 }
 
 .flex-container.section2 {
@@ -219,7 +221,7 @@ p.hero.second {
 
 
 h1.second.section {
-    margin-left: 20px;
+  margin-left: 20px;
 	text-align: center;
 }
 
