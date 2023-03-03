@@ -23,6 +23,11 @@ html, body {
   font-size: 14px;
 }
 
+hr {
+  margin: 1rem 0;
+  width: 100%;
+}
+
 .navbar {
   background-color: #1f2837;
 }
@@ -36,7 +41,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   height: 60px;
 }
 
@@ -81,6 +86,7 @@ html, body {
 	background-color: #3782F6;
 }
 
+/* Quote */
 .quote-section {
   margin-top: 2.5rem;
 }
@@ -103,11 +109,6 @@ html, body {
   align-self: flex-end;
   font-size: 36px;
   margin-top: 10px;
-}
-
-hr {
-  margin: 1rem 0;
-  width: 100%;
 }
 
 .info {
@@ -170,34 +171,62 @@ footer {
 }
 
 /* main section 1 */
+.hero {
+  background-color: #1f2937;
+  padding: 3rem 0;
+}
+
 .flex-container.section1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px;
-  gap: 148px;
-  background-color: #1f2937;
+  /* padding: 50px 100px; */
+  /* gap: 148px; */
 }
 
-h4.hero.main {
+.hero-content {
+  flex-basis: 50%;
+}
+
+.hero-img {
+  flex-basis: 50%;
+  width: 100%;
+  height: 300px;
+	margin: 30px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem 0;
+  }
+  .flex-container.section1 {
+    flex-wrap: wrap;
+  }
+
+  .hero-content {
+    flex-basis: 100%;
+  }
+
+  .hero-img {
+    flex-basis: 100%;
+    margin: 2rem 0;
+  }
+}
+
+.hero-content h4 {
   font-size: 48px;
   font-weight: bold;
 	color: #F9FAF8;
-	margin: 3rem;
+	margin-bottom: 2rem;
 }
-	
 
-p.hero.second {
-	font-size: 18p;
+.hero-content p {
+	font-size: 18px;
 	color: #E5E7EB;
-	margin: 3rem;
-
-}
-
-.hero.img {
-  height: 300px;
-	margin: 30px;
+	/* margin: 3rem; */
 }
 
 /* section 2 */
