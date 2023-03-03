@@ -171,13 +171,18 @@ footer {
 
 /* main section 1 */
 .flex-container.section1 {
-    display: flex;
-	background-color: rgb(10, 10, 26);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  gap: 148px;
+  background-color: #1f2937;
 }
 
 h4.hero.main {
-    font-size: 48px;
-    font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 	color: #F9FAF8;
 	margin: 3rem;
 }
@@ -191,24 +196,34 @@ p.hero.second {
 }
 
 .hero.img {
-    height: 300px;
+  height: 300px;
 	margin: 30px;
 }
 
 /* section 2 */
 
+.featured.text {
+  background-color: #3882f6;
+  text-align: center;
+  font-size: 36px;
+  color: #1f2937;
+}
+
 .flex-container.section2 {
-    display: flex;
-	background-color: #3882f6;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: #3882f6;
 }
 
 .second.section {
-	margin: 30px;
-    margin-left: 6em;
+  flex-basis: min-content;
+  margin: 30px;
+  margin-left: 6em;
 }
 
+
 h1.second.section {
-    margin-left: 20px;
+  margin-left: 20px;
 	text-align: center;
 }
 
@@ -219,6 +234,12 @@ p.second.section {
 img.section.\32 {
     height: 150px;
     width: 220px;
+}
+
+.second.section img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Suggest Recipe */
