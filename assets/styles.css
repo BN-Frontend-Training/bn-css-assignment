@@ -17,7 +17,8 @@
   src: url(./fonts/Roboto/Roboto-Bold.ttf);
 }
 
-html, body {
+html,
+body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(240, 240, 240);
   font-size: 14px;
@@ -25,10 +26,17 @@ html, body {
 
 .navbar {
   background-color: #1f2837;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  margin-bottom: 60px;
 }
 
 .container {
-  width: 80vw;
   margin: auto;
 }
 
@@ -38,6 +46,57 @@ html, body {
   align-items: center;
   padding: 0 15px;
   height: 60px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .navbar-brand {
+    font-size: 16px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .quote-text {
+    font-size: 24px;
+  }
+  .info {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .navbar-brand {
+    font-size: 24px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .quote-text {
+    font-size: 36px;
+  }
+  .info {
+    font-size: 22px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
 }
 
 .navbar-nav {
@@ -50,7 +109,6 @@ html, body {
 
 .navbar-brand {
   color: #f9faf8;
-  font-size: 24px;
 }
 
 .team {
@@ -67,18 +125,18 @@ html, body {
 
 .nav-link {
   color: #e5e7eb;
-  font-size: 18px;
 }
 
 .nav-link.btn {
   padding: 8px 12px;
-	/* font-size: 14px; */
-	border-radius: 4px;
-	background-color: #3782F6;
+  /* font-size: 14px; */
+  border-radius: 4px;
+  background-color: #3782f6;
 }
 
 .quote-section {
   margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .quote-box {
@@ -90,14 +148,12 @@ html, body {
 
 .quote-text {
   text-align: center;
-  font-size: 36px;
   font-style: light italic;
   color: #1f2937;
 }
 
 .user {
   align-self: flex-end;
-  font-size: 36px;
   margin-top: 10px;
 }
 
@@ -107,13 +163,13 @@ hr {
 }
 
 .info {
-  font-size: 22px;
   text-align: center;
 }
 
 .button-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .sign-up {
@@ -127,7 +183,6 @@ hr {
 
 footer {
   background-color: #1f2837;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -139,6 +194,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .short-link > a,
@@ -168,53 +224,50 @@ footer {
 /* main section 1 */
 
 .flex-container.section1 {
-    display: flex;
-	background-color: rgb(10, 10, 26);
+  display: flex;
+  background-color: rgb(10, 10, 26);
 }
-
 
 h4.hero.main {
-    font-size: 48px;
-    font-weight: bold;
-	color: #F9FAF8;
-	margin: 3rem;
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+  margin: 3rem;
 }
-	
 
 p.hero.second {
-	font-size: 18p;
-	color: #E5E7EB;
-	margin: 3rem;
-
+  font-size: 18p;
+  color: #e5e7eb;
+  margin: 3rem;
 }
 
 .hero.img {
-    height: 300px;
-	margin: 30px;
+  height: 300px;
+  margin: 30px;
 }
 
 /* section 2 */
 
 .flex-container.section2 {
-    display: flex;
-	background-color: #3882f6;
+  display: flex;
+  background-color: #3882f6;
 }
 
 .second.section {
-	margin: 30px;
-    margin-left: 6em;
+  margin: 30px;
+  margin-left: 6em;
 }
 
 h1.second.section {
-    margin-left: 20px;
-	text-align: center;
+  margin-left: 20px;
+  text-align: center;
 }
 
 p.second.section {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 img.section.\32 {
-    height: 150px;
-    width: 220px;
+  height: 150px;
+  width: 220px;
 }
