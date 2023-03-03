@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JEKH Recipes</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="container">
-          <div class="wrapper">
-            <div class="navbar-left">
-              <a class="navbar-brand" href="#"
-                >JEKH <span class="team">TEAM</span></a
-              >
-            </div>
-            <div class="navbar-right">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/blog-page-main.html"
-                    >Recipes</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn" href="./pages/suggest-a-recipe.html"
-                    >Suggest a Recipe</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Discover the extraordinary food recipes | JEKH Recipes</title>
+		<link rel="stylesheet" href="./assets/styles.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<nav class="navbar">
+				<div class="container">
+				<div class="wrapper">
+					<div class="navbar-left">
+					<a class="navbar-brand" href="#">JEKH <span class="team">TEAM</span></a>
+					</div>
+					<div class="navbar-right">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./pages/blog-page-main.html">Recipes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link btn" href="./pages/suggest-a-recipe.html">Suggest a Recipe</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</nav>
+		</header>
+		<!-- /Header -->
 
-    <section>
-      <div class="flex-container section1">
-        <div>
-          <h4 class="hero main">
-            Discover the extraordinary food recipes on the earth!
-          </h4>
-          <p class="hero second">
-            Tell me what you eat and i will tell you what you are. World food
-            day, everyday!
-          </p>
-        </div>
-        <div>
-          <img
-            class="hero img"
-            src="./assets/images/heroimg.jpg"
-            alt="spoon of spicy"
-          />
-        </div>
-      </div>
-    </section>
+		<!-- Hero Section HTML -->
+		<section class="hero">
+			<div class="container">
+				<div class="flex-container section1">
+					<div class="hero-content">
+						<h4>Discover the extraordinary food recipes on the earth!</h4>
+						<p>
+							Tell me what you eat and i will tell you what you are. 
+							World food day, everyday!
+						</p>
+					</div>
+					<img class="hero-img" src="./assets/images/heroimg.jpg" alt="spoon of spicy">
+				</div>
+			</div>
+		</section>
+		<!-- /Hero Section HTML -->
+
+		<!-- Section 2 with recipes -->
+		<section>
+			<div class="featured text"><h2>Featured Recipes</h2></div>
+			<div class="flex-container section2">
+				<div class="second section">
+					<img class="section 2" src="./assets/images/fishndchips.jpg" alt="fish and chips">
+					<h1 class="second section">Fish and chips</h1>
+					<p class="second section">
+						Classic fish and chips are a British institution and a national dish that everyone 
+						can't help but love.
+						<a href="./pages/blog-page-content.html">more info.</a>
+					</p>
+				</div>
+				<div class="second section"> 
+					<img class="section 2" src="./assets/images/miscellaneous-rice.jpg" alt="miscellaneous rice">
+					<h1 class="second section">Arroz carreteiro</h1>
+					<p class="second section">
+						Arroz Carreteiro is a meat and rice dish that hails from the south of Brazil.  
+						The translation of the name is, Wagoner’s Rice. 
+						<a href="./pages/blog-page-content.html">more info.</a>
+					</p>
+				</div>
+				<div class="second section">
+					<img class="section 2" src="./assets/images/waakye.jpg" alt="waakye ghanaian food">
+					<h1 class="second section">Waakye</h1>
+					<p class="second section">
+						Waakye should be made Ghana’s national dish. I am yet to come across anyone 
+						who does not like waakye.
+						<a href="./pages/blog-page-content.html">more info.</a>
+					</p>
+				</div>
+				<div class="second section">
+					<img class="section 2" src="./assets/images/semla.jpg" alt="swedish sweet">
+					<h1 class="second section">Selma</h1>
+					<p class="second section">
+						Traditionally served in Sweden between Christmas and Easter, these fragrant 
+						cardamom-flavoured buns are filled with a rich almond paste and whipped 
+						vanilla cream.
+						<a href="./pages/blog-page-content.html">more info.</a>
+					</p>
+				</div>
+			</div>
+		</section>
 
     <section>
       <div class="flex-container section2">

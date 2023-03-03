@@ -24,6 +24,11 @@ body {
   font-size: 14px;
 }
 
+hr {
+  margin: 1rem 0;
+  width: 100%;
+}
+
 .navbar {
   background-color: #1f2837;
   position: fixed;
@@ -116,10 +121,14 @@ header {
 }
 
 .nav-item {
-  margin-right: 10px;
+  margin-right: 2rem;
 }
 
 .nav-item:hover {
+  opacity: 0.6;
+}
+
+.nav-item .nav-link.active {
   border-bottom: 2px solid #fff;
 }
 
@@ -129,11 +138,12 @@ header {
 
 .nav-link.btn {
   padding: 8px 12px;
-  /* font-size: 14px; */
   border-radius: 4px;
   background-color: #3782f6;
+  white-space: nowrap;
 }
 
+/* Quote */
 .quote-section {
   margin-top: 2.5rem;
   margin-bottom: 3rem;
@@ -155,11 +165,6 @@ header {
 .user {
   align-self: flex-end;
   margin-top: 10px;
-}
-
-hr {
-  margin: 1rem 0;
-  width: 100%;
 }
 
 .info {
@@ -222,41 +227,87 @@ footer {
 }
 
 /* main section 1 */
+.hero {
+  background-color: #1f2937;
+  padding: 3rem 0;
+}
 
 .flex-container.section1 {
   display: flex;
-  background-color: rgb(10, 10, 26);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 50px 100px; */
+  /* gap: 148px; */
 }
 
-h4.hero.main {
+.hero-content {
+  flex-basis: 50%;
+}
+
+.hero-img {
+  flex-basis: 50%;
+  width: 100%;
+  height: 300px;
+	margin: 30px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem 0;
+  }
+  .flex-container.section1 {
+    flex-wrap: wrap;
+  }
+
+  .hero-content {
+    flex-basis: 100%;
+  }
+
+  .hero-img {
+    flex-basis: 100%;
+    margin: 2rem 0;
+  }
+}
+
+.hero-content h4 {
   font-size: 48px;
   font-weight: bold;
-  color: #f9faf8;
-  margin: 3rem;
+	color: #F9FAF8;
+	margin-bottom: 2rem;
 }
 
-p.hero.second {
-  font-size: 18p;
-  color: #e5e7eb;
-  margin: 3rem;
-}
-
-.hero.img {
-  height: 300px;
-  margin: 30px;
+.hero-content p {
+	font-size: 18px;
+	color: #E5E7EB;
+	/* margin: 3rem; */
 }
 
 /* section 2 */
 
+.featured.text {
+  background-color: #3882f6;
+  text-align: center;
+  font-size: 36px;
+  color: #1f2937;
+}
+
 .flex-container.section2 {
   display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
   background-color: #3882f6;
 }
 
 .second.section {
+  flex-basis: min-content;
   margin: 30px;
   margin-left: 6em;
 }
+
 
 h1.second.section {
   margin-left: 20px;
@@ -268,6 +319,105 @@ p.second.section {
 }
 
 img.section.\32 {
-  height: 150px;
-  width: 220px;
+    height: 150px;
+    width: 220px;
 }
+
+.second.section img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+/* Suggest Recipe */
+.suggest-recipe {
+	background-color: #E6E7EB;
+	padding: 2rem 2rem;
+	margin-bottom: 4rem;
+}
+
+.suggest-recipe .hero {
+	padding: 50px 20px;
+	text-align: center;
+	color: #1F2937;
+}
+
+.suggest-recipe .hero p {
+	opacity:50%;
+	margin-top: 0.5rem;
+}
+
+.suggest-recipe .form-wrapper {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.suggest-recipe label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+	color: #1F2937;
+}
+
+.suggest-recipe input, textarea, select  {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	box-sizing: border-box
+}
+
+.suggest-recipe button {
+	width: 100%;
+	padding: 8px 12px;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color: #3782F6;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.suggest-recipe .suggest-recipe-form {
+	width: 40%;
+}
+
+.suggest-recipe .suggest-recipe-form p {
+	margin: 2rem 0
+}
+
+@media (max-width: 768px) {
+	.suggest-recipe .hero {
+		padding: 20px 10px;
+		text-align: center;
+		color: #1F2937;
+	}
+	.suggest-recipe .suggest-recipe-form {
+		width: 100%;
+	}
+}
+
+.suggest-recipe .information {
+	color: #ffffff;
+	margin-left: 20px;
+	font-size: 16px;
+	/* margin: 0 auto;
+    width: 50%; */
+	list-style: none;
+}
+
+.suggest-recipe .information li {
+	margin-bottom: 10px;
+}
+
+/* End Suggest Recipe */
