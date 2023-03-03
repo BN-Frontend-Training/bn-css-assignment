@@ -226,6 +226,9 @@ footer {
   color: #f6046c;
 }
 
+section {
+  padding: 3rem 0;
+}
 /* main section 1 */
 .hero {
   background-color: #1f2937;
