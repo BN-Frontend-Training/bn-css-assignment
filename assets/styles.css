@@ -336,13 +336,13 @@ img.section.\32 {
 	margin-bottom: 4rem;
 }
 
-.suggest-recipe .hero {
+.suggest-recipe-hero {
 	padding: 50px 20px;
 	text-align: center;
 	color: #1F2937;
 }
 
-.suggest-recipe .hero p {
+.suggest-recipe-hero p {
 	opacity:50%;
 	margin-top: 0.5rem;
 }
@@ -397,7 +397,7 @@ img.section.\32 {
 }
 
 @media (max-width: 768px) {
-	.suggest-recipe .hero {
+	.suggest-recipe-hero {
 		padding: 20px 10px;
 		text-align: center;
 		color: #1F2937;
