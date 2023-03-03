@@ -196,6 +196,7 @@ footer {
 	margin: 30px;
   object-fit: cover;
   margin: 0px;
+  border-radius: 10px 5px;
 }
 
 @media (max-width: 768px) {
@@ -208,6 +209,7 @@ footer {
 
   .hero-content {
     flex-basis: 100%;
+    font-size: 20px
   }
 
   .hero-img {
@@ -260,15 +262,12 @@ p.second.section {
     margin-left: 5px;
 }
 
-img.section.\32 {
-    height: 150px;
-    width: 220px;
-}
 
 .second.section img {
   height: 200px;
   width: 200px;
   object-fit: cover;
+  border-radius: 10px 5px;
 }
 
 /* Suggest Recipe */
