@@ -1,7 +1,7 @@
 ## 🚀 Welcome
 
 ## ✨ Preview
-Use the following link to preview our site [https://hamra64.github.io/html-assignment-main/](https://hamra64.github.io/html-assignment-main/)
+Use the following link to preview our site [https://bn-frontend-training.github.io/bn-css-assignment/](https://bn-frontend-training.github.io/bn-css-assignment/)
 
 ## 💻 Code Contributors
 <a href="https://github.com/BN-Frontend-Training/bn-css-assignment/graphs/contributors">
