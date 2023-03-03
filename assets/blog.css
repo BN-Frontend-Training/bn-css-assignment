@@ -1,0 +1,50 @@
+body{
+	height: 100%;
+}
+
+/* RECIPES PAGES STYLES */
+
+.recipe-hero{
+    display: flex;
+    background-color: #1f2837;
+  }
+
+  .recipe-hero h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 3rem;
+  }
+  
+  .recipe-hero h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 3rem;
+  }
+  .recipe-hero p{
+    font-size: 18p;
+  color: #E5E7EB;
+  margin: 3rem;
+  }
+  
+  
+  .recipe-hero img {
+    height: 300px;
+    margin: 30px;
+    border-radius: 30px;
+  }
+  
+  .recipe-container{
+    display: flex;
+    text-align: left;
+    background-color: #e5e7eb;
+    padding: 2rem 10rem 2rem 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .recipe-container img{
+    height: 150px;
+    margin: 30px;
+    border-radius: 10px;
+  }
