@@ -56,7 +56,7 @@ section .title {
   section {
     padding: 1.5rem 0;
   }
-  
+
   section .title {
     font-size: 22px;
   }
@@ -182,6 +182,7 @@ header {
   margin-top: 1rem;
   border-radius: 5px;
 }
+
 /* End Header */
 
 /* Footer */
@@ -201,13 +202,13 @@ footer {
   overflow: hidden;
 }
 
-.short-link > a,
-.social-icons > a {
+.short-link>a,
+.social-icons>a {
   color: #fff;
   margin-right: 5px;
 }
 
-.short-link > a:hover {
+.short-link>a:hover {
   color: #f6046c;
 }
 
@@ -215,6 +216,7 @@ footer {
   text-align: center;
   flex: auto;
 }
+
 /* End Footer */
 
 /* Hero (main section 1) */
@@ -240,7 +242,7 @@ footer {
   flex-basis: 50%;
   width: 100%;
   height: 300px;
-	margin: 30px;
+  margin: 30px;
   object-fit: cover;
   margin: 0px;
   border-radius: 10px 5px;
@@ -250,6 +252,7 @@ footer {
   .hero {
     padding: 1.5rem 1rem;
   }
+
   .flex-container.section1 {
     flex-wrap: wrap;
   }
@@ -274,14 +277,15 @@ footer {
 .hero-content h4 {
   font-size: 48px;
   font-weight: bold;
-	color: #F9FAF8;
-	margin-bottom: 2rem;
+  color: #F9FAF8;
+  margin-bottom: 2rem;
 }
 
 .hero-content p {
-	font-size: 18px;
-	color: #E5E7EB;
+  font-size: 18px;
+  color: #E5E7EB;
 }
+
 /* End Hero */
 
 /* Featured Recipes */
@@ -315,6 +319,7 @@ footer {
   object-fit: cover;
   border-radius: 10px 5px;
 }
+
 /* End Featured Recipes */
 
 
@@ -359,6 +364,7 @@ footer {
   text-align: right;
   margin-top: 10px;
 }
+
 /* End Quote */
 
 /* Newsletter */
@@ -384,97 +390,99 @@ footer {
   cursor: pointer;
   border-radius: 5px;
 }
+
 /* End Newsletter */
 
 /* Suggest Recipe */
 .suggest-recipe {
-	background-color: #E6E7EB;
-	padding: 2rem 2rem;
-	margin-bottom: 4rem;
+  background-color: #E6E7EB;
+  padding: 2rem 2rem;
+  margin-bottom: 4rem;
 }
 
 .suggest-recipe-hero {
-	padding: 50px 20px;
-	text-align: center;
-	color: #1F2937;
+  padding: 50px 20px;
+  text-align: center;
+  color: #1F2937;
 }
 
 .suggest-recipe-hero p {
-	opacity:50%;
-	margin-top: 0.5rem;
+  opacity: 50%;
+  margin-top: 0.5rem;
 }
 
 .suggest-recipe .form-wrapper {
-	display: flex;
-	flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .suggest-recipe label {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-weight: 700;
-	color: #1F2937;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #1F2937;
 }
 
-.suggest-recipe input, textarea, select  {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-    width: 100%;
-    padding: 8px 12px;
-    font-size: 14px;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-	box-sizing: border-box
+.suggest-recipe input,
+textarea,
+select {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box
 }
 
 .suggest-recipe button {
-	width: 100%;
-	padding: 8px 12px;
-	font-size: 14px;
-	border-radius: 4px;
-	background-color: #3782F6;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid transparent;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #3782F6;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .suggest-recipe .suggest-recipe-form {
-	width: 40%;
+  width: 40%;
 }
 
 .suggest-recipe .suggest-recipe-form p {
-	margin: 2rem 0
+  margin: 2rem 0
 }
 
 @media (max-width: 768px) {
-	.suggest-recipe-hero {
-		padding: 20px 10px;
-		text-align: center;
-		color: #1F2937;
-	}
-	.suggest-recipe .suggest-recipe-form {
-		width: 100%;
-	}
+  .suggest-recipe-hero {
+    padding: 20px 10px;
+    text-align: center;
+    color: #1F2937;
+  }
+
+  .suggest-recipe .suggest-recipe-form {
+    width: 100%;
+  }
 }
 
 .suggest-recipe .information {
-	color: #ffffff;
-	margin-left: 20px;
-	font-size: 16px;
-	/* margin: 0 auto;
-    width: 50%; */
-	list-style: none;
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 16px;
+  list-style: none;
 }
 
 .suggest-recipe .information li {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* End Suggest Recipe */
