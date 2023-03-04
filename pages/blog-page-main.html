@@ -8,131 +8,145 @@
 		<link rel="stylesheet" href="./../assets/styles.css">
 	</head>
 	<body>
+		<!-- Header -->
 		<header>
-			<nav class="navbar">
-				<div class="container">
-					<div class="wrapper">
-						<div class="navbar-left">
-							<a class="navbar-brand" href="../index.html">JEKH <span class="team">TEAM</span></a>
-						</div>
-						<div class="navbar-right">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" href="../index.html">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link active" href="./blog-page-main.html">Recipes</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link btn" href="./suggest-a-recipe.html">Create a Recipe</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+			<a class="navbar-brand" href="./../index.html">JEKH <span class="team">TEAM</span></a>
+			<nav>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="./../index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="./blog-page-main.html">Recipes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn" href="./suggest-a-recipe.html">Create a Recipe</a>
+					</li>
+				</ul>
 			</nav>
+		</header>
+		<!-- /Header -->
 		</header>
 
 		<main>
 			<!--Section of the Newest/Principal article-->
-			<section class="hero">
-				<div class="container">
-					<div class="flex-container section1">
-						<div class="hero-content">
-							<h4>Fish and chips</h4>
-							<p>
-								Classic fish and chips are a British institution and a national dish
-								that everyone can't help but love. You can buy them from one of the t
-								housands of fish and chip shops all over the country, including the
-								world-famous Harry Ramsden's—or you can make them at home.
-							</p>
-						</div>
-						<img class="hero-img" src="./../assets/images/fishndchips.jpg" alt="fish and chips">
-					</div>
-				</div>
+			<section class="search container">
+				<input placeholder="Search">
+				<select name="category" id="category">
+					<option value="">--Please choose an option--</option>
+					<option value="dog">Breakfast</option>
+					<option value="cat">Lunch</option>
+					<option value="hamster">Dinner</option>
+					<option value="parrot">Appetizer</option>
+					<option value="spider">Side dish</option>
+					<option value="goldfish">Baked-goods</option>
+				</select>				
 			</section>
 			<!--Section divided in two columns. Each column with three articles-->
+
 			<section>
 				<div class="flex-container section2">
-					<div class="second-section">
-						<img src="./../assets/images/fishndchips.jpg" alt="fish and chips">
-						<h1 class="second-section">Fish and chips</h1>
-						<p>
-							Classic fish and chips are a British institution and a national dish that everyone
-							can't help but love.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
-					<div class="second-section">
+					<figure class="second-section">
+						<img src="./../assets/images/fishandchips.jpg" alt="fish and chips">
+						<figcaption>
+							<h1>Fish and chips</h1>
+							<p>
+								Classic fish and chips are a British institution and a national dish that everyone
+								can't help but love.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="second-section">
 						<img src="./../assets/images/carreteiro-rice.jpg" alt="miscellaneous rice">
-						<h1>Arroz carreteiro</h1>
-						<p>
-							Arroz Carreteiro is a meat and rice dish that hails from the south of Brazil.
-							The translation of the name is, Wagoner’s Rice.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
-					<div class="second-section">
+						<figcaption>
+							<h1>Arroz carreteiro</h1>
+							<p>
+								Arroz Carreteiro is a meat and rice dish that hails from the south of Brazil.
+								The translation of the name is, Wagoner’s Rice.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="second-section">
 						<img src="./../assets/images/waakye.jpg" alt="waakye ghanaian food">
-						<h1>Waakye</h1>
-						<p>
-							Waakye should be made Ghana’s national dish. I am yet to come across anyone
-							who does not like waakye.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
-					<div class="second-section">
+						<figcaption>
+							<h1>Waakye</h1>
+							<p>
+								Waakye should be made Ghana's national dish. I am yet to come across anyone
+								who does not like waakye.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="second-section">
 						<img src="./../assets/images/semla.jpg" alt="swedish sweet">
-						<h1>Selma</h1>
-						<p>
-							Traditionally served in Sweden between Christmas and Easter, these fragrant
-							cardamom-flavoured buns are filled with a rich almond paste and whipped
-							vanilla cream.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
+						<figcaption>
+							<h1>Selma</h1>
+							<p>
+								Traditionally served in Sweden between Christmas and Easter, these fragrant
+								cardamom-flavoured buns are filled with a rich almond paste and whipped
+								vanilla cream.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
 				</div>
 			</section>
 
 			<section>
 				<div class="flex-container section2">
-					<div class="second-section">
-						<img src="./../assets/images/fishndchips.jpg" alt="fish and chips">
-						<h1>Fish and chips</h1>
-						<p>
-							Classic fish and chips are a British institution and a national dish that everyone
-							can't help but love.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
-					<div class="second-section">
+					<figure class="second-section">
+						<img src="./../assets/images/fishandchips.jpg" alt="fish and chips">
+						<figcaption>
+							<h1>Fish and chips</h1>
+							<p>
+								Classic fish and chips are a British institution and a national dish that everyone
+								can't help but love.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="second-section">
 						<img src="./../assets/images/carreteiro-rice.jpg" alt="miscellaneous rice">
-						<h1>Arroz carreteiro</h1>
-						<p>
-							Arroz Carreteiro is a meat and rice dish that hails from the south of Brazil.
-							The translation of the name is, Wagoner’s Rice.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
-					<div class="second-section">
+						<figcaption>
+							<h1>Arroz carreteiro</h1>
+							<p>
+								Arroz Carreteiro is a meat and rice dish that hails from the south of Brazil.
+								The translation of the name is, Wagoner’s Rice.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="second-section">
 						<img src="./../assets/images/waakye.jpg" alt="waakye ghanaian food">
-						<h1>Waakye</h1>
-						<p>
-							Waakye should be made Ghana’s national dish. I am yet to come across anyone
-							who does not like waakye.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
-					<div class="second-section">
+						<figcaption>
+							<h1>Waakye</h1>
+							<p>
+								Waakye should be made Ghana's national dish. I am yet to come across anyone
+								who does not like waakye.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="second-section">
 						<img src="./../assets/images/semla.jpg" alt="swedish sweet">
-						<h1>Selma</h1>
-						<p>
-							Traditionally served in Sweden between Christmas and Easter, these fragrant
-							cardamom-flavoured buns are filled with a rich almond paste and whipped
-							vanilla cream.
-							<a href="blog-page-content.html">more info.</a>
-						</p>
-					</div>
+						<figcaption>
+							<h1>Selma</h1>
+							<p>
+								Traditionally served in Sweden between Christmas and Easter, these fragrant
+								cardamom-flavoured buns are filled with a rich almond paste and whipped
+								vanilla cream.
+								<a href="./blog-page-content.html">more info.</a>
+							</p>
+						</figcaption>
+					</figure>
 				</div>
 			</section>
 		</main>
@@ -141,10 +155,6 @@
 		<footer>
 			<div class="container">
 				<div class="footer-box">
-					<div class="short-link">
-						<a href="./pages/blog-page-main.html">Recipes</a>
-						<a href="./pages/suggest-a-recipe.html">Create a recipe</a>
-					</div>
 					<div class="copyright">
 						2023 created by JEKH <span class="team">TEAM</span>
 					</div>
@@ -152,7 +162,6 @@
 			</div>
 		</footer>
 		<!-- /Footer -->
-
 	</body>
 
 </html>
