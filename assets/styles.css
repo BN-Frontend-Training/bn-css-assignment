@@ -503,3 +503,27 @@ select {
 .recipe-info li {
   padding-right: 1rem;
 }
+
+/* Search */
+.search {
+  display: flex;
+  gap: 20px;
+}
+
+.search input {
+  flex-basis: 50%;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box
+}
+
+.search select {
+  flex-basis: 50%;
+}
