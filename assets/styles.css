@@ -66,6 +66,10 @@ section .title {
   margin: auto;
 }
 
+main {
+  margin-top: 60px;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -85,19 +89,14 @@ section .title {
 }
 
 /* Header */
-.navbar {
+
+header {
+  margin-bottom: 60px;
   background-color: #1f2837;
   position: fixed;
   top: 0;
   width: 100%;
   overflow: hidden;
-}
-
-header {
-  margin-bottom: 60px;
-}
-
-.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,7 +181,6 @@ header {
   margin-top: 1rem;
   border-radius: 5px;
 }
-
 /* End Header */
 
 /* Footer */
@@ -202,16 +200,6 @@ footer {
   overflow: hidden;
 }
 
-.short-link>a,
-.social-icons>a {
-  color: #fff;
-  margin-right: 5px;
-}
-
-.short-link>a:hover {
-  color: #f6046c;
-}
-
 .copyright {
   text-align: center;
   flex: auto;
@@ -223,65 +211,61 @@ footer {
 .hero {
   background-color: #1f2937;
   padding: 3rem 2rem;
-}
 
-.flex-container.section1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding: 50px 100px; */
   gap: 20px;
 }
 
-.hero-content {
+.hero aside {
   flex-basis: 50%;
 }
 
-.hero-img {
+.hero picture {
   flex-basis: 50%;
+  margin: 30px;
+  margin: 0px;
+}
+
+.hero-img img {
   width: 100%;
   height: 300px;
-  margin: 30px;
   object-fit: cover;
-  margin: 0px;
   border-radius: 10px 5px;
 }
 
 @media (max-width: 768px) {
   .hero {
     padding: 1.5rem 1rem;
-  }
-
-  .flex-container.section1 {
     flex-wrap: wrap;
   }
 
-  .hero-content {
+  .hero aside {
     flex-basis: 100%;
-    font-size: 20px
   }
 
-  .hero-img {
+  .hero picture{
     flex-basis: 100%;
     margin: 2rem 0;
   }
 
-  .hero-content h4 {
+  .hero aside h4 {
     font-size: 30px;
     margin-bottom: 1rem;
   }
 
 }
 
-.hero-content h4 {
+.hero aside h4 {
   font-size: 48px;
   font-weight: bold;
   color: #F9FAF8;
   margin-bottom: 2rem;
 }
 
-.hero-content p {
+.hero aside p {
   font-size: 18px;
   color: #E5E7EB;
 }
@@ -373,13 +357,17 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: #3882f6;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2rem;
   border-radius: 0.4rem;
+  margin-bottom: 2.5rem;
 }
 
-.newsletter p {
-  font-size: 18px;
+.newsletter-content {
   color: #fff;
+}
+
+.newsletter-content p {
+  opacity: 0.6;
 }
 
 .newsletter button {
