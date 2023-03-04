@@ -13,8 +13,19 @@
 }
 
 @font-face {
+  font-family: "Roboto Light";
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 100;
+}
+
+@font-face {
   font-family: "Roboto Bold";
   src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Extra Bold";
+  src: url(./fonts/Roboto/Roboto-Black.ttf);
 }
 
 html,
@@ -29,6 +40,41 @@ hr {
   width: 100%;
 }
 
+section {
+  padding: 3rem 0;
+}
+
+section .title {
+  font-size: 36px;
+  text-align: center;
+  color: #1f2937;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Header */
 .navbar {
   background-color: #1f2837;
   position: fixed;
@@ -41,67 +87,12 @@ header {
   margin-bottom: 60px;
 }
 
-.container {
-  margin: auto;
-}
-
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
   height: 60px;
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-  .navbar-brand {
-    font-size: 16px;
-  }
-  .nav-link {
-    font-size: 14px;
-  }
-  .quote-text {
-    font-size: 24px;
-  }
-  .info {
-    font-size: 16px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .navbar-brand {
-    font-size: 24px;
-  }
-  .nav-link {
-    font-size: 18px;
-  }
-  .quote-text {
-    font-size: 36px;
-  }
-  .info {
-    font-size: 22px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-.row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
 }
 
 .navbar-nav {
@@ -114,6 +105,18 @@ header {
 
 .navbar-brand {
   color: #f9faf8;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
 }
 
 .team {
@@ -136,39 +139,23 @@ header {
   color: #e5e7eb;
 }
 
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
 .nav-link.btn {
   padding: 8px 12px;
   border-radius: 4px;
   background-color: #3782f6;
   white-space: nowrap;
-}
-
-/* Quote */
-.quote-section {
-  margin-top: 2.5rem;
-  margin-bottom: 3rem;
-}
-
-.quote-box {
-  display: flex;
-  flex-direction: column;
-  background-color: #e5e7eb;
-  padding: 5rem 10rem;
-}
-
-.quote-text {
-  text-align: center;
-  font-style: light italic;
-  color: #1f2937;
-}
-
-.user {
-  align-self: flex-end;
-  margin-top: 10px;
-}
-
-.info {
-  text-align: center;
 }
 
 .button-wrapper {
@@ -185,7 +172,9 @@ header {
   margin-top: 1rem;
   border-radius: 5px;
 }
+/* End Header */
 
+/* Footer */
 footer {
   background-color: #1f2837;
   bottom: 0;
@@ -225,8 +214,9 @@ footer {
 .fa-instagram:hover {
   color: #f6046c;
 }
+/* End Footer */
 
-/* main section 1 */
+/* Hero (main section 1) */
 .hero {
   background-color: #1f2937;
   padding: 3rem 0;
@@ -286,33 +276,26 @@ footer {
 	color: #E5E7EB;
 	/* margin: 3rem; */
 }
+/* End Hero */
 
-/* section 2 */
-
-.featured.text {
-  background-color: #3882f6;
-  text-align: center;
-  font-size: 36px;
-  color: #1f2937;
-}
-
+/* Featured Recipes */
 .flex-container.section2 {
   display: flex;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  background-color: #3882f6;
+  gap: 20px;
 }
 
 .second.section {
   flex-basis: min-content;
-  margin: 30px;
-  margin-left: 6em;
+  /* margin: 30px;
+  margin-left: 6em; */
 }
 
 
 h1.second.section {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   text-align: center;
 }
 
@@ -327,6 +310,56 @@ p.second.section {
   object-fit: cover;
   border-radius: 10px 5px;
 }
+/* End Featured Recipes */
+
+
+/* Quote */
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 5rem 10rem;
+}
+
+.quote-text {
+  text-align: center;
+  font-style: italic;
+  font-weight: 100;
+  color: #1f2937;
+  font-size: 36px;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+.author {
+  text-align: right;
+  margin-top: 10px;
+}
+/* End Quote */
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3882f6;
+  padding: 2rem 2.5rem;
+  border-radius: 0.4rem;
+}
+
+.newsletter p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.newsletter button {
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  background-color: #3882f6;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* End Newsletter */
 
 /* Suggest Recipe */
 .suggest-recipe {
