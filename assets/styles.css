@@ -52,6 +52,16 @@ section .title {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem 0;
+  }
+  
+  section .title {
+    font-size: 22px;
+  }
+}
+
 .container {
   margin: auto;
 }
@@ -201,25 +211,16 @@ footer {
   color: #f6046c;
 }
 
-.fa-youtube:hover {
-  color: red;
-}
-
-.fa-facebook:hover {
-  color: #3882f6;
-}
-.fa-linkedin:hover {
-  color: #3882f6;
-}
-.fa-instagram:hover {
-  color: #f6046c;
+.copyright {
+  text-align: center;
+  flex: auto;
 }
 /* End Footer */
 
 /* Hero (main section 1) */
 .hero {
   background-color: #1f2937;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
 }
 
 .flex-container.section1 {
@@ -228,7 +229,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   /* padding: 50px 100px; */
-  /* gap: 148px; */
+  gap: 20px;
 }
 
 .hero-content {
@@ -247,7 +248,7 @@ footer {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
   }
   .flex-container.section1 {
     flex-wrap: wrap;
@@ -262,6 +263,12 @@ footer {
     flex-basis: 100%;
     margin: 2rem 0;
   }
+
+  .hero-content h4 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
 }
 
 .hero-content h4 {
@@ -274,7 +281,6 @@ footer {
 .hero-content p {
 	font-size: 18px;
 	color: #E5E7EB;
-	/* margin: 3rem; */
 }
 /* End Hero */
 
@@ -287,24 +293,23 @@ footer {
   gap: 20px;
 }
 
-.second.section {
+.second-section {
   flex-basis: min-content;
   /* margin: 30px;
   margin-left: 6em; */
 }
 
 
-h1.second.section {
+.second-section h1 {
   /* margin-left: 20px; */
   text-align: center;
 }
 
-p.second.section {
+.second-section p {
   margin-left: 5px;
 }
 
-
-.second.section img {
+.second-section img {
   height: 200px;
   width: 200px;
   object-fit: cover;
@@ -328,6 +333,26 @@ p.second.section {
   color: #1f2937;
   font-size: 36px;
   font-family: 'Roboto Light', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .quote-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .quote-box {
+    padding: 2.5rem 5rem;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
 }
 
 .author {
@@ -453,3 +478,32 @@ p.second.section {
 }
 
 /* End Suggest Recipe */
+
+
+/* Main Recipe */
+.main-recipe {
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.main-recipe img {
+  margin: 1rem 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+.recipe-info {
+  display: inline-flex;
+  padding: 1rem 0.5rem;
+}
+
+.recipe-info li {
+  padding-right: 1rem;
+}
