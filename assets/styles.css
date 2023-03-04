@@ -13,6 +13,12 @@
 }
 
 @font-face {
+  font-family: "Roboto Light";
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 100;
+}
+
+@font-face {
   font-family: "Roboto Bold";
   src: url(./fonts/Roboto/Roboto-Bold.ttf);
 }
@@ -46,6 +52,29 @@ section .title {
   margin-bottom: 1rem;
 }
 
+.container {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Header */
 .navbar {
   background-color: #1f2837;
   position: fixed;
@@ -58,55 +87,12 @@ header {
   margin-bottom: 60px;
 }
 
-.container {
-  margin: auto;
-}
-
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
   height: 60px;
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-  .navbar-brand {
-    font-size: 16px;
-  }
-  .nav-link {
-    font-size: 14px;
-  }
-  .quote-text {
-    font-size: 24px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .navbar-brand {
-    font-size: 24px;
-  }
-  .nav-link {
-    font-size: 18px;
-  }
-  .quote-text {
-    font-size: 36px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
 }
 
 .navbar-nav {
@@ -119,6 +105,18 @@ header {
 
 .navbar-brand {
   color: #f9faf8;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
 }
 
 .team {
@@ -139,6 +137,18 @@ header {
 
 .nav-link {
   color: #e5e7eb;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 18px;
+  }
 }
 
 .nav-link.btn {
@@ -316,6 +326,8 @@ p.second.section {
   font-style: italic;
   font-weight: 100;
   color: #1f2937;
+  font-size: 36px;
+  font-family: 'Roboto Light', sans-serif;
 }
 
 .author {
